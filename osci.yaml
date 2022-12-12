@@ -2,7 +2,7 @@
     name: sqa-integration
     max: 1
 - project:
-    periodic-weekly:
+    periodic-daily:
       jobs:
       - sit_sqa-integration_jammy-yoga
       - sit_sqa-integration_focal-yoga
