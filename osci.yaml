@@ -9,6 +9,7 @@
 - job:
     name: sit_sqa-integration
     parent: sqa-integration
+    timeout: 54600
     semaphore: sqa-integration
     abstract: true
     vars:
