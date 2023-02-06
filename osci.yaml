@@ -9,7 +9,7 @@
 - job:
     name: sit_sqa-integration
     parent: sqa-integration
-    timeout: 54600
+    timeout: 28800
     semaphore: sqa-integration
     abstract: true
     vars:
@@ -25,10 +25,10 @@
         # The default repo is maintained by SQA and should have up-to-date deployments. If you can't find
         # a suitable branch in the repo, you can either contact the SQA team to create one or create
         # a branch in your own repo (make sure to include `git+ssh://oil-ci-bot@` in the repo variable)
-        branch: solutionsqa/fcb/sku/master-yoga-jammy
+        branch: solutionsqa/fcb/sku/stable-yoga-jammy_openstack_integration
 - job:
     name: sit_sqa-integration_focal-yoga
     parent: sit_sqa-integration
     vars:
       sqalab:
-        branch: solutionsqa/fcb/sku/master-yoga-focal
+        branch: solutionsqa/fcb/sku/stable-yoga-focal_openstack_integration
